@@ -172,7 +172,46 @@
 </head>
 <body>
 <h1 id="istt1003">ISTT1003</h1>
-<p><span class="math display">\[f(x) = \int_{-\infty}^{\infty} e^{-x^2}
-dx\]</span></p>
+<h2 id="sentral-og-spredningsmål">Sentral og spredningsmål</h2>
+<p>Her er <span class="math inline">\(n\)</span> antall tall i
+datasettet, <span class="math inline">\(x_{i}\)</span> er hvert enkelt
+tall i datasettet, og <span class="math inline">\(\bar{x}\)</span> er
+gjennomsnittet av alle tallene.</p>
+<h3 id="gjenomsnitt">Gjenomsnitt:</h3>
+<p><span class="math display">\[
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_{i}
+\]</span></p>
+<h3 id="empirisk-varians">Empirisk varians:</h3>
+<p><span class="math display">\[
+S^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_{i} - \bar{x})^2
+\]</span></p>
+<h3 id="empirisk-standardavvik">Empirisk standardavvik:</h3>
+<p><span class="math display">\[
+S = \sqrt{S^2} = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (x_{i} - \bar{x})^2}
+\]</span></p>
+<h3 id="median-m">Median, M:</h3>
+<p>Sorter dataene i stigende rekkefølge. Hvis antall datasett er
+oddetall, er medianen det midterste tallet. Hvis antall datasett er
+partall, er medianen gjennomsnittet av de to midterste tallene.</p>
+<h3 id="kvartiler-q">Kvartiler, Q:</h3>
+<p><span class="math display">\[Q_{1}, Q_{2}, Q_{3}\]</span></p>
+<p>Her er <span class="math inline">\(Q_{1}\)</span> medianen av den
+nedre halvdelen av dataene, <span class="math inline">\(Q_{2}\)</span>
+er medianen av hele datasettet, og <span
+class="math inline">\(Q_{3}\)</span> er medianen av den øvre halvdelen
+av dataene.</p>
+<h3 id="kvartilbredde-iqr">Kvartilbredde, IQR:</h3>
+<p><span class="math display">\[
+IQR = Q_{3} - Q_{1}
+\]</span></p>
+<p>IQR (interquartile range) er forskjellen mellom den øvre og nedre
+kvartilen</p>
+<h3 id="vekting">Vekting:</h3>
+<p><span class="math inline">\(Q_{1}\)</span> har plass <span
+class="math inline">\(0.25(n+1)\)</span>, <span
+class="math inline">\(Q_{2}\)</span> har plass <span
+class="math inline">\(0.5(n+1)\)</span>, og <span
+class="math inline">\(Q_{3}\)</span> har plass <span
+class="math inline">\(0.75(n+1)\)</span>.</p>
 </body>
 </html>
