@@ -1,14 +1,14 @@
 # Makefile
 
 SRC := $(wildcard src/*.md)
-OUT := $(patsubst src/%.md, build/%.html, $(SRC))
+OUT := $(patsubst src/%.md, build/%.pdf, $(SRC))
 
 all: $(OUT)
 
-# rule: build/filename.html from src/filename.md
-build/%.html: src/%.md
+# rule: build/filename.pdf from src/filename.md
+build/%.pdf: src/%.md
 	mkdir -p build
-	pandoc $< -t html --mathjax -s -o $@
+	pandoc $< -o $@
 
 clean:
 	rm -rf build
